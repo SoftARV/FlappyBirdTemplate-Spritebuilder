@@ -6,7 +6,6 @@
 @implementation GamePlayScene
 
 -(void)initialize {
-    // your code here
     character = (Character*)[CCBReader load:@"Character"];
     [physicsNode addChild:character];
     [self addObstacle];
@@ -14,7 +13,6 @@
 }
 
 -(void)update:(CCTime)delta {
-    // put update code here
     // Increment the time since the last obstacle was added
     timeSinceObstacle += delta; // delta is approximately 1/60th of a second
     
